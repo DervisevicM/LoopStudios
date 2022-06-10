@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+  </head>
+  <body>
+
+    <!--NAVIGACIJA-->
+    <nav class="navbar">
+      <div class="navbar_container">
+
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.svg" alt="Loopstudios" />
+          </a>
+        </div>
+
+        <ul class="menu">
+
+          <div class="icon close-btn">
+            <img src="images/icon-close.svg" alt="close menu" />
+          </div>
+
+          <li><a href="#about"> About</a></li>
+          <li><a href="#careers"> Careers</a></li>
+          <li><a href="#events"> Events</a></li>
+          <li><a href="#products"> Products</a></li>
+          <li><a href="#support"> Support</a></li>
+        </ul>
+
+        <div class="icon menu-btn">
+          <img src="images/icon-hamburger.svg" alt="open menu" />
+        </div>
+      </div>
+    </nav>
+    
+    <!--HEADER-->
+    <header>
+      <div class="container">
+        <div class="headline">
+          <h1 class="headline_title">Immersive experiences that deliver<h1>
+        </div>
+      </div>
+    </header>
+
+   <!--ABOUT--> 
+
+    <section class="about">
+      <div class="container">
+
+        <div class="about_image">
+        <img src="images/mobile/image-interactive.jpg" alt="Interactive VR">
+        </div>
+      
+
+      <div class="about_content">
+        <h2 class="section_title">
+          The leader in interactive VR
+        </h2>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around
+          the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.
+        </p>
+      </div>
+
+      </div>
+    </section>
+
+    <!--SREDNJI DEO WEB STRANICE-->
+
+      <section class="creations">
+        <div class="container">
+          <h2 class="section_title">
+            Our creations
+          </h2>
+
+          <div class="creations_grid">
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-deep-earth.jpg" alt="Deep earth">
+              <div class="item_text">Deep <br>earth</div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-night-arcade.jpg" alt="Night arcade">
+              <div class="item_text">Night <br>arcade</div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-soccer-team.jpg" alt="Soccer team">
+              <div class="item_text">Soccer <br> team</div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-grid.jpg" alt="The grid">
+              <div class="item_text">The <br> grid </div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-from-above.jpg" alt="From up above vr">
+              <div class="item_text">From up <br> above vr </div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis">
+              <div class="item_text">Pocket <br> borealis</div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-curiosity.jpg" alt="The curiosity">
+              <div class="item_text"> The <br>curiosity</div>
+            </a>
+
+            <a href="#" class="item">
+              <img class="item_image "src="images/mobile/image-fisheye.jpg" alt="Make it fisheye">
+              <div class="item_text">Make it <br> fisheye</div>
+            </a>
+          </div>
+          <div class="see_all">
+            <a class="btn" href="#"> See all</a>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+
+
+      <footer>
+        <div class="container">
+
+          <div class="footer_top">
+            <div class="footer_logo">
+              <img src="images/logo.svg" alt="Loopstudios">
+            </div>
+
+            <ul class="footer_menu">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer_bottom">
+            <div class="footer_social">
+              <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+              <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+              <a href="#"><img src="images/icon-pinterest.svg" alt=""><a>
+              <a href="#"><img src="images/icon-instagram.svg" alt=""><a>
+            </div>
+            <div class="footer_copy">
+              <p>© 2021 Loopstudios. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    
+    <script>
+      /*------JAVA SCRIPT ZA NAVIGACIJU --------*/
+
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu");
+      const menuBtn = document.querySelector ( ".menu-btn");
+      const closeBtn = document.querySelector (".close-btn");
+
+      menuBtn.onclick = ()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabledScroll");
+      }
+
+      closeBtn.onclick = () =>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        body.classList.remove("disabledScroll");
+      }
+
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+
+      // UCITAVANJE SLIKA OVISNO O SIRINI EKRANA Jquery
+
+      if($(window).width() >= 1000) {
+        $(function(){
+          $(".item_image").each(function(){
+            var $this = $(this)
+            $this.attr("src", $this.attr("src").replace("mobile", "desktop"))
+          });
+        });
+      }
+
+
+    </script>
+  </body>
+</html>
